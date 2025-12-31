@@ -1,0 +1,104 @@
+/* CARRUSEL */
+.carrucel {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.carrucel-principal {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 85%;
+  max-height: 25rem;
+  position: relative;
+  box-shadow: var(--sombra-1);
+}
+
+.carrucel-principal img {
+  width: 100%;
+}
+
+.imagenCarrusel {
+  display: none;
+}
+
+.imagenCarrusel.activo {
+  display: block;
+}
+
+/* BOTONES CARRUSEL */
+.carrucel-principal button {
+  position: absolute;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--rojo);
+  font-size: 3rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.carrucel-principal button:first-of-type {
+  left: 15px;
+}
+
+.carrucel-principal button:last-of-type {
+  right: 15px;
+}
+
+/* INFO DEL CARRUSEL */
+.info-carrucel {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--blanco);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.info-carrucel p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.info-carrucel a {
+  display: inline-block;
+  background-color: var(--rojo);
+  color: var(--blanco);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.5s;
+}
+
+.info-carrucel a:hover {
+  background-color: var(--verde);
+}
+
+/* PUNTOS CARRUSEL */
+.indicador {
+  margin-top: 1rem;
+}
+
+.punto {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background: var(--gris-5);
+  border-radius: 50%;
+}
+
+.punto.active {
+  background-color: var(--rojo);
+}

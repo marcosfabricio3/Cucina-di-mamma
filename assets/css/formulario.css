@@ -1,0 +1,79 @@
+/*=========================      CONTENIDO FORMULARIO     =========================*/
+.contacto-container {
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 800px;
+  width: 80%;
+  box-shadow: var(--sombra-1);
+}
+
+.contacto-container h1 {
+  text-align: center;
+  color: var(--rojo);
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+  color: var(--gris-5);
+}
+
+input,
+textarea {
+  width: 90%;
+  padding: 0.7rem;
+  border: 1px solid var(--gris-5);
+  border-radius: 8px;
+  font-family: var(--fuente-1);
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--rojo);
+  color: var(--gris-5);
+  box-shadow: 0 0 6px rgba(198, 40, 40, 0.2);
+  outline: none;
+}
+.campo label {
+  color: var(--gris-5);
+  transition: color 0.8s ease;
+}
+
+/* Solo el label del div .campo que esté en focus */
+.campo:focus-within label {
+  color: var(--rojo);
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.botonForm {
+  background: var(--rojo);
+  color: var(--blanco);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--fuente-1);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.botonForm:hover {
+  background: var(--verde);
+  transform: translateY(-2px);
+}

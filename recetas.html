@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cucina di mamma | Recetario</title>
+    <meta name="description" content="Explora las mejores recetas de comida italiana: pizzas, pastas y mucho más" />
+    <meta name="author" content="Gastón da Silva, Sebastián Nuñes, Marcos García" />
+    <meta name="copyright" content="Cucina di mamma_SA" />
+    <link rel="icon" type="image/png" href="./assets/img/stok/icono.png">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/recetas.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!--==========    NAV   ==========-->
+    <header>
+        <nav>
+            <a href="./index.html" class="logo">Cucina di mamma</a>
+            <button class="hamburguesa" aria-label="Abrir menú"><span></span> <span></span> <span></span></button>
+            <ul class="mainListNav">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./sobreNosotros.html">Sobre nosotros</a></li>
+                <li class="dropdown">
+                    <a href="/recetas.html" class="recetas-btn" id="enlaceSubmenu">Recetas ▼</a>
+                    <!-- SUB LISTA -->
+                    <ul class="subListNav">
+                        <li><a href="./recetas.html#pizza">Pizzas</a></li>
+                        <li><a href="./recetas.html#pasta">Pastas</a></li>
+                        <li><a href="./recetas.html#otro">Otros</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="italiaLine">
+            <span class="colorItalia1"></span> <span class="colorItalia2"></span>
+            <span class="colorItalia3"></span>
+        </div>
+    </header>
+    <!--==========    RECETAS   ==========-->
+    <main class="recetas">
+        <!-- SECCIÓN PIZZAS -->
+        <section class="categoria">
+            <h2 id="pizza">Pizzas</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <div class="presentacionTargeta">
+                        <img src="./assets/img/recetas/pizzas/pizza-margarita.jpg" alt="Pizza Margarita">
+                        <h3 id="pizzaMargarita">Pizza Margarita</h3>
+                        <button class="botonReceta">Ver receta</button>
+                    </div>
+                    <div class="contenido inactivo">
+                        <div class="bloque ingredientes">
+                            <h4>Ingredientes</h4>
+                            <ul class="lista-ingredientes">
+                                <li>Masa de pizza</li>
+                                <li>Salsa de tomate</li>
+                                <li>Mozzarella</li>
+                                <li>Hojas de albahaca</li>
+                                <li>Aceite de oliva (opcional)</li>
+                            </ul>
+                        </div>
+
+                        <div class="bloque preparacion">
+                            <h4>Preparación</h4>
+                            <ol class="lista-pasos">
+                                <li>
+                                    <span class="num">1</span>
+                                    <p>Extiende la masa de pizza sobre una bandeja o piedra para horno.</p>
+                                </li>
+                                <li>
+                                    <span class="num">2</span>
+                                    <p>Unta la salsa de tomate sobre la masa de manera uniforme.</p>
+                                </li>
+                                <li>
+                                    <span class="num">3</span>
+                                    <p>Distribuye la mozzarella en trozos o rodajas sobre la salsa.</p>
+                                </li>
+                                <li>
+                                    <span class="num">4</span>
+                                    <p>Hornea a 220 °C durante 10–15 minutos o hasta que el queso se derrita y la masa
+                                        esté dorada.</p>
+                                </li>
+                                <li>
+                                    <span class="num">5</span>
+                                    <p>Añade las hojas de albahaca fresca al salir del horno y termina con un chorrito
+                                        de aceite de oliva.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tarjeta">
+                    <div class="presentacionTargeta">
+                        <img src="./assets/img/recetas/pizzas/pizza-pepperoni.jpg" alt="Pizza Pepperoni">
+                        <h3>Pizza Pepperoni</h3>
+                        <button class="botonReceta">Ver receta</button>
+                    </div>
+                    <div class="contenido inactivo">
+                        <div class="bloque ingredientes">
+                            <h4>Ingredientes</h4>
+                            <ul class="lista-ingredientes">
+                                <li>Masa de pizza</li>
+                                <li>Salsa de tomate</li>
+                                <li>Mozzarella</li>
+                                <li>Rodajas de pepperoni</li>
+                                <li>Aceite de oliva</li>
+                                <li>Orégano seco</li>
+                            </ul>
+                        </div>
+
+                        <div class="bloque preparacion">
+                            <h4>Preparación</h4>
+                            <ol class="lista-pasos">
+                                <li><span class="num">1</span>
+                                    <p>Precalienta el horno a 220 °C.</p>
+                                </li>
+                                <li><span class="num">2</span>
+                                    <p>Extiende la masa de pizza sobre la bandeja o piedra para hornear.</p>
+                                </li>
+                                <li><span class="num">3</span>
+                                    <p>Unta la salsa de tomate sobre la masa.</p>
+                                </li>
+                                <li><span class="num">4</span>
+                                    <p>Coloca la mozzarella sobre la salsa.</p>
+                                </li>
+                                <li><span class="num">5</span>
+                                    <p>Distribuye las rodajas de pepperoni.</p>
+                                </li>
+                                <li><span class="num">6</span>
+                                    <p>Añade aceite de oliva y orégano seco al gusto.</p>
+                                </li>
+                                <li><span class="num">7</span>
+                                    <p>Hornea 12–15 minutos hasta dorar.</p>
+                                </li>
+                                <li><span class="num">8</span>
+                                    <p>Deja reposar 2 minutos, corta y sirve.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tarjeta">
+                    <div class="presentacionTargeta">
+                        <img src="./assets/img/recetas/pizzas/pizza-caprese.jpg" alt="Pizza Caprese">
+                        <h3>Pizza Caprese</h3>
+                        <button class="botonReceta">Ver receta</button>
+                    </div>
+                    <div class="contenido inactivo">
+                        <div class="bloque ingredientes">
+                            <h4>Ingredientes</h4>
+                            <ul class="lista-ingredientes">
+                                <li>Masa de pizza</li>
+                                <li>Salsa de tomate</li>
+                                <li>Mozzarella fresca</li>
+                                <li>Tomates cherry o en rodajas</li>
+                                <li>Hojas de albahaca fresca</li>
+                                <li>Aceite de oliva</li>
+                                <li>Sal y pimienta</li>
+                            </ul>
+                        </div>
+
+                        <div class="bloque preparacion">
+                            <h4>Preparación</h4>
+                            <ol class="lista-pasos">
+                                <li><span class="num">1</span>
+                                    <p>Precalienta el horno a 220 °C.</p>
+                                </li>
+                                <li><span class="num">2</span>
+                                    <p>Extiende la masa sobre la bandeja o piedra para hornear.</p>
+                                </li>
+                                <li><span class="num">3</span>
+                                    <p>Unta la salsa de tomate sobre la masa.</p>
+                                </li>
+                                <li><span class="num">4</span>
+                                    <p>Coloca la mozzarella fresca en trozos.</p>
+                                </li>
+                                <li><span class="num">5</span>
+                                    <p>Añade los tomates cherry o en rodajas.</p>
+                                </li>
+                                <li><span class="num">6</span>
+                                    <p>Hornea 12–15 minutos.</p>
+                                </li>
+                                <li><span class="num">7</span>
+                                    <p>Añade albahaca fresca al sacar del horno.</p>
+                                </li>
+                                <li><span class="num">8</span>
+                                    <p>Rocía con aceite, sal y pimienta.</p>
+                                </li>
+                                <li><span class="num">9</span>
+                                    <p>Corta y sirve caliente.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <!-- SECCIÓN PASTA -->
+        <section class="categoria">
+            <h2 id="pasta">Pastas</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <div class="presentacionTargeta">
+                        <img src="./assets/img/recetas/Pastas/fetuccini-a-la-carbonara.jpg"
+                            alt="Fetuccini a la Carbonara">
+                        <h3 id="fetuccini">fetuccini carbonara</h3>
+                        <button class="botonReceta">Ver receta</button>
+                    </div>
+                    <div class="contenido inactivo">
+                        <div class="bloque ingredientes">
+                            <h4>Ingredientes</h4>
+                            <ul class="lista-ingredientes">
+                                <li>250 g de fetuccine</li>
+                                <li>100 g de panceta o tocino</li>
+                                <li>2 huevos grandes</li>
+                                <li>50 g de queso parmesano rallado</li>
+                                <li>1 diente de ajo (opcional)</li>
+                                <li>Sal y pimienta negra</li>
+                                <li>Aceite de oliva</li>
+                            </ul>
+                        </div>
+
+                        <div class="bloque preparacion">
+                            <h4>Preparación</h4>
+                            <ol class="lista-pasos">
+                                <li><span class="num">1</span>
+                                    <p>Cocina los fetuccine en agua con sal hasta que estén al dente.</p>
+                                </li>
+                                <li><span class="num">2</span>
+                                    <p>Sofríe la panceta con aceite. Añade ajo si deseas.</p>
+                                </li>
+                                <li><span class="num">3</span>
+                                    <p>Bate los huevos y mézclalos con el parmesano.</p>
+                                </li>
+                                <li><span class="num">4</span>
+                                    <p>Escurre la pasta reservando un poco de agua.</p>
+                                </li>
+                                <li><span class="num">5</span>
+                                    <p>Mezcla la pasta caliente con la panceta.</p>
+                                </li>
+                                <li><span class="num">6</span>
+                                    <p>Fuera del fuego, añade la mezcla de huevo y queso.</p>
+                                </li>
+                                <li><span class="num">7</span>
+                                    <p>Ajusta con agua de cocción si es necesario.</p>
+                                </li>
+                                <li><span class="num">8</span>
+                                    <p>Salpimenta al gusto.</p>
+                                </li>
+                                <li><span class="num">9</span>
+                                    <p>Sirve con más parmesano.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tarjeta">
+                    <div class="presentacionTargeta">
+                        <img src="./assets/img/recetas/Pastas/Lasagna alla Bolognese.webp" alt="Lasagna alla Bolognese">
+                        <h3>Lasagna alla Bolognese</h3>
+                        <button class="botonReceta">Ver receta</button>
+                    </div>
+                    <div class="contenido inactivo">
+                        <div class="bloque ingredientes">
+                            <h4>Ingredientes</h4>
+                            <ul class="lista-ingredientes">
+                                <li>12 láminas de lasaña</li>
+                                <li>400 g de carne molida de res</li>
+                                <li>200 g de carne molida de cerdo</li>
+                                <li>Cebolla, zanahoria y apio picados</li>
+                                <li>2 dientes de ajo</li>
+                                <li>400 g de tomate triturado</li>
+                                <li>Leche</li>
+                                <li>Mantequilla, harina y leche (para bechamel)</li>
+                                <li>Queso parmesano rallado</li>
+                                <li>Aceite de oliva, sal, pimienta y nuez moscada</li>
+                            </ul>
+                        </div>
+
+                        <div class="bloque preparacion">
+                            <h4>Preparación</h4>
+                            <ol class="lista-pasos">
+                                <li><span class="num">1</span>
+                                    <p>Sofríe las verduras.</p>
+                                </li>
+                                <li><span class="num">2</span>
+                                    <p>Añade la carne y dora.</p>
+                                </li>
+                                <li><span class="num">3</span>
+                                    <p>Agrega el tomate y cocina 20–30 minutos.</p>
+                                </li>
+                                <li><span class="num">4</span>
+                                    <p>Prepara la bechamel.</p>
+                                </li>
+                                <li><span class="num">5</span>
+                                    <p>Cocina las láminas si no son precocidas.</p>
+                                </li>
+                                <li><span class="num">6</span>
+                                    <p>Arma capas de pasta, boloñesa y parmesano.</p>
+                                </li>
+                                <li><span class="num">7</span>
+                                    <p>Termina con bechamel y queso.</p>
+                                </li>
+                                <li><span class="num">8</span>
+                                    <p>Hornea 30–40 minutos a 180 °C.</p>
+                                </li>
+                                <li><span class="num">9</span>
+                                    <p>Reposa 5–10 minutos antes de servir.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tarjeta">
+                    <div class="presentacionTargeta">
+                        <img src="./assets/img/recetas/Pastas/Gnocchi alla Sorrentina.jpg"
+                            alt="Gnocchi alla Sorrentina">
+                        <h3>Gnocchi alla Sorrentina</h3>
+                        <button class="botonReceta">Ver receta</button>
+                    </div>
+                    <div class="contenido inactivo">
+                        <div class="bloque ingredientes">
+                            <h4>Ingredientes</h4>
+                            <ul class="lista-ingredientes">
+                                <li>500 g de gnocchi</li>
+                                <li>400 g de tomate triturado</li>
+                                <li>2 dientes de ajo</li>
+                                <li>250 g de mozzarella en cubos</li>
+                                <li>50 g de queso parmesano</li>
+                                <li>Aceite de oliva</li>
+                                <li>Sal y pimienta</li>
+                                <li>Albahaca fresca</li>
+                            </ul>
+                        </div>
+
+                        <div class="bloque preparacion">
+                            <h4>Preparación</h4>
+                            <ol class="lista-pasos">
+                                <li><span class="num">1</span>
+                                    <p>Cocina los gnocchi hasta que floten.</p>
+                                </li>
+                                <li><span class="num">2</span>
+                                    <p>Sofríe el ajo en aceite.</p>
+                                </li>
+                                <li><span class="num">3</span>
+                                    <p>Añade el tomate y cocina 10–15 minutos.</p>
+                                </li>
+                                <li><span class="num">4</span>
+                                    <p>Incorpora los gnocchi a la salsa.</p>
+                                </li>
+                                <li><span class="num">5</span>
+                                    <p>Añade la mozzarella y mezcla.</p>
+                                </li>
+                                <li><span class="num">6</span>
+                                    <p>Pasa a una fuente, agrega parmesano y albahaca.</p>
+                                </li>
+                                <li><span class="num">7</span>
+                                    <p>Gratina 10–15 minutos a 200 °C.</p>
+                                </li>
+                                <li><span class="num">8</span>
+                                    <p>Sirve caliente.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN OTROS -->
+        <section class="categoria">
+            <h2 id="otro">Otros</h2>
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <div class="presentacionTargeta">
+                        <img src="./assets/img/recetas/otros/Risotto alla Milanese.jpg" alt="Risotto alla Milanese">
+                        <h3 id="risottoMilanese">Risotto alla Milanese</h3>
+                        <button class="botonReceta">Ver receta</button>
+                    </div>
+                    <div class="contenido inactivo">
+                        <div class="bloque ingredientes">
+                            <h4>Ingredientes</h4>
+                            <ul class="lista-ingredientes">
+                                <li>350 g de arroz arborio</li>
+                                <li>1 l de caldo caliente</li>
+                                <li>1 cebolla picada</li>
+                                <li>60 g de mantequilla</li>
+                                <li>60 g de parmesano rallado</li>
+                                <li>2 cucharadas de aceite de oliva</li>
+                                <li>1 pizca de azafrán</li>
+                                <li>Sal y pimienta</li>
+                            </ul>
+                        </div>
+
+                        <div class="bloque preparacion">
+                            <h4>Preparación</h4>
+                            <ol class="lista-pasos">
+                                <li><span class="num">1</span>
+                                    <p>Sofríe cebolla en aceite y mantequilla.</p>
+                                </li>
+                                <li><span class="num">2</span>
+                                    <p>Tuesta el arroz.</p>
+                                </li>
+                                <li><span class="num">3</span>
+                                    <p>Añade azafrán disuelto en caldo.</p>
+                                </li>
+                                <li><span class="num">4</span>
+                                    <p>Agrega caldo de a poco, removiendo.</p>
+                                </li>
+                                <li><span class="num">5</span>
+                                    <p>Cocina hasta que esté cremoso.</p>
+                                </li>
+                                <li><span class="num">6</span>
+                                    <p>Añade mantequilla y parmesano.</p>
+                                </li>
+                                <li><span class="num">7</span>
+                                    <p>Ajusta sal y pimienta.</p>
+                                </li>
+                                <li><span class="num">8</span>
+                                    <p>Sirve caliente.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tarjeta">
+                    <div class="presentacionTargeta">
+                        <img src="./assets/img/recetas/otros/Osso Buco.avif" alt="Osso Buco">
+                        <h3>Osso Buco</h3>
+                        <button class="botonReceta">Ver receta</button>
+                    </div>
+                    <div class="contenido inactivo">
+                        <div class="bloque ingredientes">
+                            <h4>Ingredientes</h4>
+                            <ul class="lista-ingredientes">
+                                <li>4 jarretes de ternera</li>
+                                <li>Zanahorias picadas</li>
+                                <li>Apio picado</li>
+                                <li>Cebolla picada</li>
+                                <li>Ajo picado</li>
+                                <li>400 g de tomate triturado</li>
+                                <li>200 ml de vino blanco</li>
+                                <li>500 ml de caldo de carne</li>
+                                <li>Laurel</li>
+                                <li>Sal, pimienta y perejil fresco</li>
+                            </ul>
+                        </div>
+
+                        <div class="bloque preparacion">
+                            <h4>Preparación</h4>
+                            <ol class="lista-pasos">
+                                <li><span class="num">1</span>
+                                    <p>Dora los jarretes y reserva.</p>
+                                </li>
+                                <li><span class="num">2</span>
+                                    <p>Sofríe cebolla, zanahoria, apio y ajo.</p>
+                                </li>
+                                <li><span class="num">3</span>
+                                    <p>Añade tomates y vino.</p>
+                                </li>
+                                <li><span class="num">4</span>
+                                    <p>Incorpora jarretes, caldo y laurel.</p>
+                                </li>
+                                <li><span class="num">5</span>
+                                    <p>Cocina 1.5–2 horas a fuego lento.</p>
+                                </li>
+                                <li><span class="num">6</span>
+                                    <p>Ajusta sal y pimienta.</p>
+                                </li>
+                                <li><span class="num">7</span>
+                                    <p>Agrega perejil fresco al servir.</p>
+                                </li>
+                                <li><span class="num">8</span>
+                                    <p>Acompaña con risotto o puré.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tarjeta">
+                    <div class="presentacionTargeta">
+                        <img src="./assets/img/recetas/otros/Bruschetta al Pomodoro.jpg" alt="Bruschetta al Pomodoro">
+                        <h3>Bruschetta al Pomodoro</h3>
+                        <button class="botonReceta">Ver receta</button>
+                    </div>
+                    <div class="contenido inactivo">
+                        <div class="bloque ingredientes">
+                            <h4>Ingredientes</h4>
+                            <ul class="lista-ingredientes">
+                                <li>4 rebanadas de pan rústico</li>
+                                <li>2 tomates maduros</li>
+                                <li>2 dientes de ajo</li>
+                                <li>6 hojas de albahaca</li>
+                                <li>Aceite de oliva extra virgen</li>
+                                <li>Sal y pimienta</li>
+                                <li>Opcional: vinagre balsámico</li>
+                            </ul>
+                        </div>
+
+                        <div class="bloque preparacion">
+                            <h4>Preparación</h4>
+                            <ol class="lista-pasos">
+                                <li><span class="num">1</span>
+                                    <p>Tuesta las rebanadas de pan.</p>
+                                </li>
+                                <li><span class="num">2</span>
+                                    <p>Frota con ajo para aromatizar.</p>
+                                </li>
+                                <li><span class="num">3</span>
+                                    <p>Mezcla tomate, albahaca, aceite, sal y pimienta.</p>
+                                </li>
+                                <li><span class="num">4</span>
+                                    <p>Coloca la mezcla sobre el pan.</p>
+                                </li>
+                                <li><span class="num">5</span>
+                                    <p>Sirve inmediatamente.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!--==========    FOOTER   ==========-->
+    <footer>
+        <p>© 2025 Cucina di mamma. Todos los derechos reservados.</p>
+        <p>Creado por: Gastón da Silva, Sebastián Nuñes & Marcos García</p>
+        <!-- SUB MENU -->
+        <section class="footer-menu">
+            <a href="./index.html">Inicio</a> |
+            <a href="./sobreNosotros.html">Sobre nosotros</a> |
+            <a href="./recetas.html">Recetas</a> |
+            <a href="./contacto.html">Contacto</a>
+        </section>
+        <!-- REDES SOCIALES -->
+        <section class="socials">
+            <a href="https://www.facebook.com/?locale=es_LA"><i class="fab fa-facebook-f"></i> Facebook</a> |
+            <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i> Instagram</a> |
+            <a href="https://outlook.live.com/mail/0/"><i class="fas fa-envelope"></i> Contacto</a>
+        </section>
+    </footer>
+    <script src="./assets/src/main.js"></script>
+    <script src="./assets/src/desplegableReceta.js"></script>
+    <script src="./assets/src/dropdown.js"></script>
+
+</body>
+
+</html>

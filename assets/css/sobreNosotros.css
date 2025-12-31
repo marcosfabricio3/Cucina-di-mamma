@@ -1,0 +1,56 @@
+/*=========================      CONTENIDO SOBRE NOSOTROS     =========================*/
+.sobre-nosotros {
+  margin-top: 4rem;
+  display: block;
+  padding: 0;
+}
+
+.sobreNosotrosBanner {
+  height: 12rem;
+  background-image: url(../img/stok/gastronomia-de-italia-.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sobre-nosotros .container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.sobre-nosotros h1 {
+  font-size: 3rem;
+  color: var(--rojo);
+}
+
+.sobreNosotrosCard {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 5rem;
+  box-shadow: var(--sombra-1);
+  transition: transform 0.3s;
+}
+
+.sobreNosotrosCard:hover {
+  transform: translateY(-5px);
+}
+
+.sobre-nosotros strong {
+  color: #000;
+}
+
+.sobre-nosotros h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--verde);
+}
+
+.sobre-nosotros p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: var(--gris-5);
+}

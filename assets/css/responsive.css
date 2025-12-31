@@ -1,0 +1,140 @@
+/*=========================      ANCHO DE PANTALLA  768     =========================*/
+@media (max-width: 768px) {
+  /* ----------NAV */
+    .hamburguesa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3rem;
+    height: 2rem;
+    cursor: pointer;
+    padding: 5px 4px;
+    background-color: var(--blanco);
+    border: none;
+    position: absolute;
+    right: 3rem;
+  }
+
+  .hamburguesa span {
+    height: 4px;
+    width: 100%;
+    background: var(--rojo);
+  }
+
+  nav {
+    align-items: center;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .mainListNav {
+    display: none;
+    top: calc(3rem + 5px);
+    right: 0;
+    width: auto;
+    padding: 1rem;
+    box-shadow: 4px 4px 19px rgba(0, 0, 0, .4);
+  }
+
+  .mainListNav.activo {
+    display: block;
+    background-color: var(--gris-9);
+    border-radius: 12px 0 0 12px;
+    position: absolute;
+  }
+
+  .mainListNav li {
+    margin-bottom: 1rem;
+  }
+
+  /* ----------SUB NAB */
+  .dropdown ul {display: none;}
+
+  /* ----------CARRUSEL */
+  .carrucel-principal {max-height: 13rem;}
+
+  .carrucel-principal button {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 2rem;
+  }
+
+  .info-carrucel p {font-size: 1.5rem;}
+
+  .info-carrucel a {padding: 0.2rem 0.5rem;}
+
+  /* ----------RECOMENDADOS */
+  .recomendados-grid {
+    grid-template-columns: 3fr;
+  }
+
+  .recomendado-card {
+    width: 100%;
+  }
+
+  main h2 {
+    font-size: 1.7rem;
+  }
+
+  /* ----------SOBRE NOSOTROS */
+  .sobreNosotrosCard p {font-size: .8rem;}
+
+  .container h1 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .tarjeta {width: 95%;}
+  
+  .botonReceta {
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.5rem .5rem;
+    border-radius: 12px;
+    height: 2rem;
+    font-size: medium;
+    align-items: center;
+    display: flex;
+  }
+
+  .contenido p {
+    font-size: .8rem;
+    text-align: start;
+  }
+
+  .contenido li {font-size: .8rem;}
+
+  .contenido strong {font-size: .8rem;}
+
+  /* ----------FORMULARIO */
+  form {grid-template-columns: 1fr;}
+
+  .contacto-container {
+  box-shadow: none;
+  }
+
+  /* ----------FORMULARIO */
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+/*=========================      ANCHO DE PANTALLA  375     =========================*/
+@media (max-width: 375px) {
+  
+  /* ----------CARRUSEL */
+  .carrucel-principal {max-height: 11rem;}
+
+  .carrucel-principal button {display: none;}
+
+  main h2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  /* ----------SOBRE NOSOTROS */
+  .sobreNosotrosCard p {font-size: .7rem;}
+}

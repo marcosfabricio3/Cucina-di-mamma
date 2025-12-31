@@ -1,0 +1,34 @@
+:root {
+  /* COLORES */
+  --verde: #2e7d32;
+  --rojo: #c62828;
+  --blanco: #ffffff;
+  /* COLORES SECUDARIOS */
+  --gris-5: #6b6b6b;
+  --gris-6: rgba(255, 255, 255, 0.7);
+  --gris-9: #f6f6f6;
+  /* FUENTE */
+  --fuente-1: "Merriweather", serif;
+  /* SOMBRAS */
+  --sombra-1: 0 0 32px 12px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--gris-6);
+  margin: 0;
+  padding: 0;
+  background-color: var(--gris-6);
+  font-family: var(--fuente-1), sans-serif;
+}
+
+main {
+  margin-top: 5rem;
+  padding: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--gris-6);
+  align-items: center;
+}

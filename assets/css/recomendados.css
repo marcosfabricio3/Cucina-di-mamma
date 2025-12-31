@@ -1,0 +1,41 @@
+/* RECOMENDADOS */
+main h2 {
+  font-size: 2rem;
+  color: var(--verde);
+}
+
+.recomendados-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.recomendado-card {
+  border-radius: 12px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.recomendado-card:hover {
+  transform: translateY(-5px);
+}
+
+.recomendado-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recomendado-info {
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.recomendado-info h3 {
+  padding: 0;
+}
+
+.recomendado-info a {
+  color: var(--rojo);
+}

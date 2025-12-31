@@ -7,14 +7,16 @@
   <meta name="description" content="Página de gastronomía italiana. Recetas tradicionales, ingredientes y tips de cocin ialiana"/>
   <meta name="author" content="Gastón da Silva, Sebastián Nuñes, Marcos García"/>
   <meta name="copyright" content="Cucina di mamma_SA"/>
-  <meta property="og:title" content="Cucina di mamma">
-  <meta property="og:description" content="Página de gastronomía italiana. Recetas tradicionales, ingredientes y tips de cocin ialiana"/>
-  <meta propierty="og:type" content="website">
-  <meta property="og:locate" content="es_UY">
-  <meta property="og:url" content="https://cucinadimamma.sexy">
-  <link rel="icon" type="image/png" href="/images/stok/icono.png">
+  <link rel="icon" type="image/png" href="./assets/img/stok/icono.png">
   <!-- ESTILOS -->
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/header.css" />
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/carrusel.css">
+  <link rel="stylesheet" href="./assets/css/recomendados.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- FUENTES -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,21 +27,21 @@
   <!--==========    NAV   ==========-->
   <header>
     <nav>
-      <a class="logo" href="./index.html">Cucina di mamma</a>
+      <a href="./index.html" class="logo">Cucina di mamma</a>
       <button class="hamburguesa" aria-label="Abrir menú"><span></span> <span></span> <span></span></button>
       <ul class="mainListNav">
         <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./HTML/sobreNosotros.html">Sobre nosotros</a></li>
+        <li><a href="./sobreNosotros.html">Sobre nosotros</a></li>
         <li class="dropdown">
-          <a href="#" class="recetas-btn" id="enlaceSubmenu">Recetas</a>
+          <a href="/recetas.html" class="recetas-btn" id="enlaceSubmenu">Recetas ▼</a>
           <!-- SUB LISTA -->
           <ul class="subListNav">
-            <li><a href="./HTML/recetas.html#pizza">Pizzas</a></li>
-            <li><a href="./HTML/recetas.html#pasta">Pastas</a></li>
-            <li><a href="./HTML/recetas.html#otro">Otros</a></li>
+            <li><a href="./recetas.html#pizza">Pizzas</a></li>
+            <li><a href="./recetas.html#pasta">Pastas</a></li>
+            <li><a href="./recetas.html#otro">Otros</a></li>
           </ul>
         </li>
-        <li><a href="./HTML/contacto.html">Contacto</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
       </ul>
     </nav>
     <div class="italiaLine">
@@ -55,24 +57,24 @@
         <button class="prev">&#10094;</button> <!--BOTON PREV-->
         <!-- IMAGENES CARRUSEL -->
         <div class="imagenCarrusel activo">
-          <img src="./images/recetas/pizzas/pizza-margarita.jpg" alt="pizza" />
+          <img src="./assets/img/recetas/pizzas/pizza-margarita.jpg" alt="pizza" />
           <div class="info-carrucel">
             <p>Pizza Margarita</p>
-            <a href="./HTML/recetas.html#pizzaMargarita">Ver receta</a>
+            <a href="./recetas.html#pizzaMargarita">Ver receta</a>
           </div>
         </div>
         <div class="imagenCarrusel">
-          <img src="./images/recetas/Pastas/fetuccini-a-la-carbonara.jpg" alt="pizza" />
+          <img src="./assets/img/recetas/Pastas/fetuccini-a-la-carbonara.jpg" alt="pizza" />
           <div class="info-carrucel">
             <p>Pasta</p>
-            <a href="./HTML/recetas.html#fetuccini">Ver receta</a>
+            <a href="./recetas.html#fetuccini">Ver receta</a>
           </div>
         </div>
         <div class="imagenCarrusel">
-          <img src="./images/recetas/otors/Risotto alla Milanese.jpg" alt="pizza" />
+          <img src="./assets/img/recetas/otros/Risotto alla Milanese.jpg" alt="pizza" />
           <div class="info-carrucel">
             <p>Risotto</p>
-            <a href="./HTML/recetas.html#risottoMilanese">Ver receta</a>
+            <a href="./recetas.html#risottoMilanese">Ver receta</a>
           </div>
         </div>
         <button class="next">&#10095;</button> <!--BOTON NEXT-->
@@ -89,21 +91,21 @@
     <section class="recomendados">
       <div class="recomendados-grid" href="">
         <article class="recomendado-card">
-          <img src="./images/referidos/81aigYN5G6L._AC_SL1500_.jpg" alt="Piedra refractaria" class="producto" />
+          <img src="./assets/img/referidos/81aigYN5G6L._AC_SL1500_.jpg" alt="Piedra refractaria" class="producto" />
           <div class="recomendado-info">
-            <h3><a href="https://www.amazon.es/Millarco-90332-Piedra-pizza-natural/dp/B09QMHMG2P/ref=sr_1_8?crid=104U5D9H420ED&dib=eyJ2IjoiMSJ9.BcHoAl_cwci4xxZ0DQVPXAInwP4waOQDCmDX3l-gY2Umzz2O1GIBQWiR8e-0sJio2WVA2Mz3nosjL_dp6oyuv5D_HOc8P_7V6RChJtlZ1dCi9QAkkokgHm-wx1Lk4Xq2rbZw664r0biVlID0fowAQn-AsKj41ibLoVGcGTmWOh0CZCz0SU6Iu33TCslo-gqwy41u4OjLX03BaSE_dW8INwKSdWMZ_jw4wc7DKzum22xPXIZQnc2MxMNymrblEmGuubmN4vavHlrAbWmD7f7XiSXe-4ae6-xv25_p_KF44rA.qdwccLxMz7Wcbl8nMbCt9mVmctRlMTW7Nlyv4Hpr37w&dib_tag=se&keywords=piedra%2Bde%2Bpizza&qid=1756238924&sprefix=piedra%2Bde%2Bp%2Caps%2C380&sr=8-8&th=1">piedra Refractaria</a></h3>
+            <h3><a href="https://www.amazon.es/Millarco-90332-Piedra-pizza-natural/dp/B09QMHMG2P/ref=sr_1_8?crid=104U5D9H420ED&dib=eyJ2IjoiMSJ9.BcHoAl_cwci4xxZ0DQVPXAInwP4waOQDCmDX3l-gY2Umzz2O1GIBQWiR8e-0sJio2WVA2Mz3nosjL_dp6oyuv5D_HOc8P_7V6RChJtlZ1dCi9QAkkokgHm-wx1Lk4Xq2rbZw664r0biVlID0fowAQn-AsKj41ibLoVGcGTmWOh0CZCz0SU6Iu33TCslo-gqwy41u4OjLX03BaSE_dW8INwKSdWMZ_jw4wc7DKzum22xPXIZQnc2MxMNymrblEmGuubmN4vavHlrAbWmD7f7XiSXe-4ae6-xv25_p_KF44rA.qdwccLxMz7Wcbl8nMbCt9mVmctRlMTW7Nlyv4Hpr37w&dib_tag=se&keywords=piedra%2Bde%2Bpizza&qid=1756238924&sprefix=piedra%2Bde%2Bp%2Caps%2C380&sr=8-8&th=1">Piedra Refractaria</a></h3>
             <p>$49</p>
           </div>
         </article>
         <article class="recomendado-card">
-          <img src="./images/referidos/Pasta Maker Machine.jpg" alt="" class="producto" />
+          <img src="./assets/img/referidos/Pasta Maker Machine.jpg" alt="" class="producto" />
           <div class="recomendado-info">
             <h3><a href="https://www.amazon.es/YASHE-Ajustable-Cortador-Inoxidable-Espaguetis/dp/B0CPPGGC35/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=33UNWX7QUU8LO&dib=eyJ2IjoiMSJ9.VEWg4trTw4GKgC3Z7yGeHd8OsLZFUfrs6zY0dgfI0QDBnopRV2pIT4ic_maegDmrxfp3REwqn2-QZoCa6D8x5lQ_a-9rJZgPfpO6JL3cAVOpM0OD33mIB5snb3GH4XNKLvOtAWlkef7XQBFkVukmAhTfQt5LQhrJ253v65zPKr3kRfBGGHNdv9m9g7HqVwqtIDun5lBJQ-s-8VWonakSP5kFNSWmsPJBQYTjBor98G9BTP86AiEnsULAt79D54srMcTsHJOcAeOZJOWivOI2Za4kPc5yTHCesyaJeBmrckQ.i2GB7UTAL2492QC7PpUfIrjtdqiEljpmv7DtzibVm-U&dib_tag=se&keywords=pasta+maker%5C&qid=1756231190&sprefix=pasta+mak%2Caps%2C554&sr=8-1">Pasta Maker Machine</a></h3>
             <p>$40</p>
           </div>
         </article>
         <article class="recomendado-card">
-          <img src="./images/referidos/Pizza Cutter.jpg" alt="" class="producto" />
+          <img src="./assets/img/referidos/Pizza Cutter.jpg" alt="" class="producto" />
           <div class="recomendado-info">
             <h3><a href="https://www.amazon.es/Westmark-Tajadera-para-pizza-Easy/dp/B0C3XJG2H4/ref=sr_1_101?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2C15WMDNQOTGD&dib=eyJ2IjoiMSJ9._koV2zhWZfnUNBwEb_4iDthHtnpjairVKHXX--4I14PyOfRhs45IlSR9EwoS-QGEoA5Gj7boVZYLOEJ8E5d8A1gaoIpZHBLPqVwnJzIGWP8.4kV2D0Vo4lWS4Uk7Ei90pS09IQ-fq3E9mpw7HdUCIYI&dib_tag=se&keywords=pizza+cutter&qid=1756239102&sprefix=pizza+cutte%2Caps%2C564&sr=8-101&xpid=FAM3p5v1PShaY">Pizza Cutter</a></h3>
             <p>$14</p>
@@ -119,9 +121,9 @@
       <!-- SUB MENU -->
       <section class="footer-menu">
         <a href="./index.html">Inicio</a> |
-        <a href="./HTML/sobreNosotros.html">Sobre nosotros</a> |
-        <a href="./HTML/recetas.html">Recetas</a> |
-        <a href="./HTML/contacto.html">Contacto</a>
+        <a href="./sobreNosotros.html">Sobre nosotros</a> |
+        <a href="./recetas.html">Recetas</a> |
+        <a href="./contacto.html">Contacto</a>
       </section>
       <!-- REDES SOCIALES -->
       <section class="socials">
@@ -130,6 +132,8 @@
         <a href="https://outlook.live.com/mail/0/"><i class="fas fa-envelope"></i> Contacto</a>
       </section>
     </footer>
-  <script src="./main.js"></script>
+  <script src="./assets/src/main.js"></script>
+  <script src="./assets/src/carrusel.js"></script>
+  <script src="./assets/src/dropdown.js"></script>
 </body>
 </html>

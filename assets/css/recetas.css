@@ -1,0 +1,181 @@
+/*=========================      CONTENIDO RECETAS     =========================*/
+.categoria h2 {
+  color: var(--rojo);
+  text-align: center;
+}
+
+.recetas-btn {
+  display: none;
+}
+
+.categoria {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.tarjetas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tarjeta {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 60%;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.presentacionTargeta {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.presentacionTargeta h3 {
+  color: var(--blanco);
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 0 12px 12px 0;
+  transition: background 0.3s;
+}
+
+.tarjeta:hover h3 {
+  background: var(--verde);
+}
+
+.botonReceta {
+  background: var(--rojo);
+  position: absolute;
+  right: 1rem;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+  height: 3rem;
+  font-family: var(--fuente-1);
+  font-size: large;
+}
+
+.botonReceta:hover {
+  background: var(--verde);
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* CONTENIDO DE LA TARJETA */
+.contenido {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--blanco);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.contenido.inactivo {
+  display: none;
+}
+
+.activo {
+  display: grid;
+}
+
+.contenido .bloque {
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+}
+
+.lista-ingredientes {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+.lista-ingredientes li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.6;
+}
+
+.lista-ingredientes li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--verde);
+}
+
+.contenido h4 {
+  margin: 0;
+  color: var(--rojo);
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.lista-pasos li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: flex-start;
+  column-gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.lista-pasos .num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: var(--rojo);
+  color: var(--blanco);
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.lista-pasos p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .tarjeta {
+    width: 90%;
+  }
+
+  .contenido,
+  .activo {
+    grid-template-columns: 1fr;
+  }
+
+  .contenido .bloque {
+    padding: 1rem;
+  }
+}
